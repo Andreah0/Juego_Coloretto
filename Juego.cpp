@@ -73,13 +73,6 @@ void Juego::iniciarJuego() {
             turno = (turno + 1) % jugadores.size();
         }
         
-        for (int i = 0; i < numJugadores; i++) {
-            if (!columnaTomada[i]) {
-                int ultimoJugador = (turno - 1 + numJugadores) % numJugadores;
-                tomarColumna(ultimoJugador);
-                break;
-            }
-        }
     }
     puntajesFinales();
 }
